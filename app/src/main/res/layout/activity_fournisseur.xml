@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.Login">
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adress"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/adress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="219dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adress"
+        android:layout_alignStart="@+id/company"
+        android:layout_marginBottom="-59dp"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone"
+        android:layout_alignStart="@+id/adress"
+        android:layout_marginBottom="-151dp"
+        android:text="Phone number" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/company"
+        android:layout_alignStart="@+id/adress"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Company's name" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="195dp"
+        android:text="General description" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/company"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="142dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="165dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginBottom="49dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="Save"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="119dp"
+        android:text="Licensed" />
+
+    <Spinner
+        android:id="@+id/licence"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="-119dp" />
+
+</RelativeLayout>

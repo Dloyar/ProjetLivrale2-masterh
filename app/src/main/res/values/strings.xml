@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Everyday needs</string>
+
+    <string-array name="names">
+        <item>--Choisir role--</item>
+        <item>Fournisseur</item>
+        <item>Administrateur</item>
+        <item>Proprietaire</item>
+    </string-array>
+
+    <string-array name="licenseds">
+        <item>--Choisir Licensed--</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="semaine">
+        <item>--Choisir jour--</item>
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
+
+
+</resources>
