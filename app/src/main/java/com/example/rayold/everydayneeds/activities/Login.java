@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.rayold.everydayneeds.Fournisseur;
 import com.example.rayold.everydayneeds.R;
+import com.example.rayold.everydayneeds.ServiceEdit;
 import com.example.rayold.everydayneeds.admin;
 
 public class Login extends AppCompatActivity {
@@ -57,6 +58,10 @@ public class Login extends AppCompatActivity {
                         if(db.fournisseurHasPersonalInformation(email)){
                             Intent a = new Intent(Login.this, Fournisseur.class);
                             a.putExtra("EMAIL", user.getEmail());
+                            startActivity(a);
+                        }
+                        else{
+                            Intent a = new Intent(Login.this, ServiceEdit.class);
                             startActivity(a);
                         }
 

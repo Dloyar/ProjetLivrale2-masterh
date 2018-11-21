@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailabilityFournisseur">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginBottom="-66dp"
+        android:text="Jour de disponibilite"
+        tools:ignore="RtlCompat" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="66dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+
+        android:id="@+id/textView10"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/spinner"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="136dp"
+
+        android:text="heure debut"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/etChooseTimeDebut"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Click here to choose time beginning"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+
+        android:id="@+id/textView12"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/etChooseTimeDebut"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginStart="42dp"
+
+        android:layout_marginLeft="42dp"
+
+        android:layout_marginBottom="-264dp"
+
+        android:text="heure fin" />
+
+    <TextView
+        android:id="@+id/etChooseTimeFin"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="18dp"
+        android:hint="Click here to choose time ending"
+        tools:ignore="RtlCompat" />
+
+    <Button
+
+        android:id="@+id/buttonSaveDate"
+
+        android:layout_width="350dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="0dp"
+
+        android:layout_marginBottom="112dp"
+
+        android:text="Save Availability"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

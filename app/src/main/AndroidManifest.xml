@@ -28,8 +28,10 @@
         <activity android:name=".activities.Activity_LoggedIn" />
         <activity android:name=".admin" />
         <activity android:name=".Fournisseur" />
-        <activity android:name=".fournisseurService" />
         <activity android:name=".serviceList" />
+        <activity android:name=".AvailabilityFournisseur" />
+        <activity android:name=".displayAvailability" />
+        <activity android:name=".ServiceEdit"></activity>
     </application>
 
 </manifest>

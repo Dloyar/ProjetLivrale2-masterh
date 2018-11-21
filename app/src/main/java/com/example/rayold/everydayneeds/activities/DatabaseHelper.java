@@ -10,7 +10,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
 
-        super(context, "rrr.db", null, 1);
+        super(context, "rage.db", null, 1);
 
     }
 
@@ -206,6 +206,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(cursor.moveToFirst()){
             String idStr = cursor.getString(0);
             db.delete("service",  "id" + " = " + idStr, null);
+            cursor.close();
+            result = true;
+        }
+        db.close();
+        return result;
+    }
+
+    public boolean deleteServiceFournisseur(String serviceName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        boolean result = false;
+        String query = "SELECT * FROM "
+                + "service"
+                + " WHERE "
+                + "serviceName"
+                + " = \""
+                + serviceName
+                + "\""
+                ;
+        Cursor cursor = db.rawQuery(query, null);
+
+        if(cursor.moveToFirst()){
+            String idStr = cursor.getString(0);
+            db.delete("addServiceFournisseur",  "service" + " = " + idStr, null);
             cursor.close();
             result = true;
         }

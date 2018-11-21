@@ -43,7 +43,7 @@ public class serviceList extends AppCompatActivity {
                 serviceName =(String) listView.getItemAtPosition(position);
                 boolean insert = db.insertServiceFournisseur(getIntent().getStringExtra("EMAIL"),(String) listView.getItemAtPosition(position));
                 if (insert = true ){
-                    Intent j = new Intent (serviceList.this,fournisseurService.class );
+                    Intent j = new Intent (serviceList.this,AvailabilityFournisseur.class );
                     Toast.makeText(getApplicationContext(), "service saved: successful ", Toast.LENGTH_SHORT).show();
                     startActivity(j);
                 }

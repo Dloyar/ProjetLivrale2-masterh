@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".displayAvailability">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISPONIBLE LE:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:textColor="#c3c3"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="96dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="182dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginBottom="133dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:text="DE:" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="219dp"
+        android:text="A:" />
+</RelativeLayout>
