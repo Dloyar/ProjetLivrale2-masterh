@@ -28,6 +28,8 @@ public class AvailabilityFournisseur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_availability_fournisseur);
+
+        db = new DatabaseHelper(this);
         buttonSaveDate = (Button) findViewById(R.id.buttonSaveDate);
 
         mySpinner = (Spinner) findViewById(R.id.spinner);
@@ -115,13 +117,17 @@ public class AvailabilityFournisseur extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Fields are empty", Toast.LENGTH_SHORT).show();
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "information saved: Successfully", Toast.LENGTH_SHORT).show();
-                    Intent j = new Intent(AvailabilityFournisseur.this, displayAvailability.class);
-                    j.putExtra("DAY", s3);
-                    j.putExtra("HOUR1",s1);
-                    j.putExtra("HOUR2",s2);
-                    startActivity(j);
-
+                    Boolean insert = db.insertAvailable(s1,s1,s2,s3);
+                    if(insert == true){
+                        Toast.makeText(getApplicationContext(), "information saved: Successfully", Toast.LENGTH_SHORT).show();
+                        Intent j = new Intent(AvailabilityFournisseur.this, displayAvailability.class);
+                        j.putExtra("DAY", s3);
+                        j.putExtra("HOUR1",s1);
+                        j.putExtra("HOUR2",s2);
+                        startActivity(j);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "information saved: failed", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
             }

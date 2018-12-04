@@ -45,6 +45,7 @@ public class serviceList extends AppCompatActivity {
                 if (insert = true ){
                     Intent j = new Intent (serviceList.this,AvailabilityFournisseur.class );
                     Toast.makeText(getApplicationContext(), "service saved: successful ", Toast.LENGTH_SHORT).show();
+                    j.putExtra("EMAIL",getIntent().getStringExtra("EMAIL"));
                     startActivity(j);
                 }
                 else{

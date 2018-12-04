@@ -10,7 +10,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
 
-        super(context, "rage.db", null, 1);
+        super(context, "trqtqr.db", null, 1);
 
     }
 
